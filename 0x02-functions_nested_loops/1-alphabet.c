@@ -4,7 +4,7 @@
 * main - Entry point
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char c;
 
