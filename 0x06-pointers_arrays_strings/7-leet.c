@@ -6,19 +6,19 @@
 * Return: str
 */
 
-char *leet(char *n)
+char *leet(char *str)
 {
-int i1 = 0, i2;
-char leet[8] = {‘O', ‘L’, ‘ ? ’, ‘E’, ‘A’, ‘ ? ’, ‘ ? ', ‘T’};
-while (str[i1])
+int indx1 = 0, indx2;
+char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+while (str[indx1])
 {
-for (i2 = 0; i2 <= 7; i2++)
+for (indx2 = 0; indx2 <= 7; indx2++)
 {
-if (str[i1] == leet[i2] ||
-str[i1] - 32 == leet[i2])
-str[i1] = i2 + ‘0’;
+if (str[indx1] == leet[indx2] ||
+str[indx1] - 32 == leet[indx2])
+str[indx1] = indx2 + '0';
 }
-i1++;
+indx1++;
 }
 return (str);
 }
