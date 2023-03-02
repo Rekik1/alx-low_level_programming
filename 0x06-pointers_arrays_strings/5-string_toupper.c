@@ -7,14 +7,14 @@
 * Return: str
 */
 
-char *string_toupper(char *n)
+char *string_toupper(char *str)
 {
-int i = 0;
-while (str[i])
+int index = 0;
+while (str[index])
 {
-if (str[i] >= 'a' && str[i] <= 'z')
-str[i] -= 32;
-i++;
+if (str[index] >= 'a' && str[index] <= 'z')
+str[index] -= 32;
+index++;
 }
 return (str);
 }
