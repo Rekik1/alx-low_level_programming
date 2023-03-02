@@ -7,20 +7,20 @@
 * Return: str
 */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
 int i;
 int a;
 char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-for (i = 0; *s[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 	{
 for (a = 0; a < 52; a++)
 {
-if (*s[i] == data1[a])
+if (str[i] == data1[a])
 {
-*s[i] = datarot[a];
+str[i] = datarot[a];
 break;
 }
 }
